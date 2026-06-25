@@ -1,0 +1,26 @@
+{
+  "name": "summer-party",
+  "version": "1.0.0",
+  "description": "Sito statico con animazioni 3D per una festa al cascinotto in campagna",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "uipro": "uipro init --ai opencode"
+  },
+  "packageManager": "pnpm@10.30.3",
+  "dependencies": {
+    "gsap": "^3.15.0",
+    "three": "^0.185.0",
+    "uipro-cli": "^2.2.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.1",
+    "@types/three": "^0.185.0",
+    "tailwindcss": "^4.3.1",
+    "typescript": "^6.0.3",
+    "vite": "^8.1.0"
+  }
+}

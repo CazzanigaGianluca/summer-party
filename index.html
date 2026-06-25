@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#0E1116" />
+    <meta name="description" content="Festa al Casot — prima edizione 2026. Una sera di campagna, pizza, musica e balli sotto le stelle. Sabato 27 Giugno 2026." />
+    <meta property="og:title" content="Festa al Casot · Prima Edizione 2026" />
+    <meta property="og:description" content="Sabato 27 Giugno 2026. Pizza, musica e balli sotto le stelle. Prima edizione della Festa al Casot." />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Festa al Casot · Prima Edizione 2026</title>
+  </head>
+  <body>
+    <canvas id="scene" aria-hidden="true"></canvas>
+    <div id="grain" aria-hidden="true"></div>
+    <div id="vignette" aria-hidden="true"></div>
+
+    <div id="content">
+      <nav class="nav" id="nav">
+        <a class="nav-brand" href="#top">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 11 L12 4 L21 11" />
+            <path d="M5 10 V20 H19 V10" />
+            <path d="M10 20 V14 H14 V20" />
+          </svg>
+          <span>Festa al Casot</span>
+        </a>
+        <div class="nav-links">
+          <a href="#dettagli">Dettagli</a>
+          <a href="#programma">Programma</a>
+        </div>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Apri menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+
+      <header id="top" class="hero">
+        <p class="eyebrow reveal">
+          <span class="dot"></span>
+          Prima edizione · Sabato 27 Giugno 2026
+        </p>
+        <h1 class="hero-title reveal">
+          <span class="line">Festa al Casot</span>
+        </h1>
+        <p class="hero-sub reveal">
+          Una sera di campagna, luci calde e cielo stellato.
+          Pizza, musica e balli fino a notte fonda.
+        </p>
+
+        <div class="countdown reveal" id="countdown" aria-label="Conto alla rovescia">
+          <div class="cd-unit"><span class="cd-num" data-cd="days">--</span><span class="cd-lbl">giorni</span></div>
+          <span class="cd-sep">:</span>
+          <div class="cd-unit"><span class="cd-num" data-cd="hours">--</span><span class="cd-lbl">ore</span></div>
+          <span class="cd-sep">:</span>
+          <div class="cd-unit"><span class="cd-num" data-cd="minutes">--</span><span class="cd-lbl">min</span></div>
+          <span class="cd-sep">:</span>
+          <div class="cd-unit"><span class="cd-num" data-cd="seconds">--</span><span class="cd-lbl">sec</span></div>
+        </div>
+
+        <a href="#dettagli" class="scroll-cue" aria-label="Scorri verso il basso">
+          <span>Scopri di più</span>
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 5 V19 M6 13 L12 19 L18 13" />
+          </svg>
+        </a>
+      </header>
+
+      <section id="dettagli" class="section">
+        <div class="section-head reveal">
+          <p class="kicker">L'appuntamento</p>
+          <h2 class="section-title">Dettagli dell'evento</h2>
+        </div>
+
+        <div class="cards">
+          <article class="card glass reveal">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="5" width="18" height="16" rx="2" />
+                <path d="M3 9 H21 M8 3 V7 M16 3 V7" />
+              </svg>
+            </div>
+            <h3>Quando</h3>
+            <p class="big">Sabato 27 Giugno 2026</p>
+            <p>dalle <strong>19:00</strong> fino a notte fonda</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="programma" class="section">
+        <div class="section-head reveal">
+          <p class="kicker">La serata</p>
+          <h2 class="section-title">Programma</h2>
+        </div>
+
+        <ol class="timeline">
+          <li class="tl-item reveal">
+            <span class="tl-time">19:00</span>
+            <div class="tl-dot"></div>
+            <div class="tl-body">
+              <h4>Pizza</h4>
+              <p>Pizza da asporto per iniziare la serata insieme.</p>
+            </div>
+          </li>
+          <li class="tl-item reveal">
+            <span class="tl-time">21:00</span>
+            <div class="tl-dot"></div>
+            <div class="tl-body">
+              <h4>Inizio festa</h4>
+              <p>Musica, cassa e balli: la festa parte ufficialmente.</p>
+            </div>
+          </li>
+        </ol>
+
+        <div class="note glass reveal">
+          <p>
+            <strong>Cosa portare:</strong> il divertimento. Il resto è di casa.
+          </p>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p class="footer-title">Ci vediamo al casot.</p>
+        <p class="footer-mini">© 2026 · Festa al Casot</p>
+      </footer>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
